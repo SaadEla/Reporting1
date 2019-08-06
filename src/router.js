@@ -1,6 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import Mesrapports from './views/Mesrapports.vue'
+import Modeles from './views/ModelesPlanification.vue'
+import rappinstform from './views/rappinstantaneform.vue'
+import rappinst from './views/rappinstantane.vue'
+import visualiserap from './views/visualiserapport.vue'
+import test from './views/test.vue'
+
 
 Vue.use(Router)
 
@@ -11,15 +17,29 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Mesrapports
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    }
+      path: '/modeles',
+      name: 'modeles',
+      component: Modeles
+    },
+    {
+      path: '/rappinstform',
+      name: 'rappinstform',
+      component: rappinstform
+    },
+    {
+      path: '/rappinst',
+      name: 'rappinst',
+      component: rappinst
+    },
+    {
+      path: '/visrap/:id',
+      name: 'visrap',
+      component: visualiserap
+    },
+
+
   ]
 })
