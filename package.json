@@ -16,7 +16,7 @@
     "vue-json-excel": "^0.2.98",
     "vue-router": "^3.0.3",
     "vuetify": "^1.5.5",
-    "xlsx": "^0.14.4"
+    "xlsx": "^0.17.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.9.0",
